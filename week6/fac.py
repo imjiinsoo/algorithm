@@ -14,3 +14,4 @@ def fac2(n):
 
 print(fac1(5))
 print(fac2(5))
+
