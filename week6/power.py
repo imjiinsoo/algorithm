@@ -1,9 +1,11 @@
+#억지기법
 def slow_power(x,n):
     result = 1.0
     for i in range(n):
         result *= x
     return result
 
+#축소 정복 기법
 def power(x,n):
     if n == 0:
         return 1
