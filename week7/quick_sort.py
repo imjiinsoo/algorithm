@@ -25,7 +25,7 @@ def partition(A, left, right):
     print("회전 진행 중:         ", A)
     return high
 
-data = [5,3,8,4,9,1,6,2,7]
+data = [45, 12, 23, 50, 18, 25, 40, 30, 27, 35]
 print("before quick_sort: ", data)
 quick_sort(data, 0, len(data)-1) # (리스트, 맨 처음 인덱스, 젤 마지막 인덱스)
 print("after  quick_sort: ", data)
