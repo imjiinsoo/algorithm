@@ -24,4 +24,4 @@ DIGITS = 4
 data = [random.randint(1,9999) for _ in range(10)]
 print('original: ', data)
 radix_sort(data)
-print('sorted: ', )
+print('sorted: ', data)
