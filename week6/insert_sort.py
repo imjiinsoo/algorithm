@@ -13,7 +13,7 @@ def printStep(arr, val):
     print(" Step %2d = " % val, end="")
     print(arr)
 
-data = [5,3,8,4,9,1,6,2,7]
+data = [3,5,8,4,9,1,6,2,7]
 print("Original  : ", data)
 insert_sort(data)
 print("Insertion : ", data)

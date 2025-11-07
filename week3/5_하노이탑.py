@@ -7,4 +7,4 @@ def hanoi_tower(n, fr, tmp, to):
         print(f"원판{n} : {fr} --> {to}")
         hanoi_tower(n-1, tmp, fr, to)
 
-hanoi_tower(3,"a", "b", "c")
+hanoi_tower(2,"x", "y", "z")

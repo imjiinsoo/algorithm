@@ -1,10 +1,12 @@
 def string_matching(T,P):
-    n = len(T); m = len(P)
+    n = len(T)
+    m = len(P)
     for i in range(n-m+1): # 왜 n-m+1인지 다시 생각
         j = 0
         while j < m and P[j] == T[i+j]:
             j += 1
-        if j == m: return i
+        if j == m:
+            return i
     return -1
 
 text = 'HELLO WORLD'
