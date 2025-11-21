@@ -4,10 +4,11 @@ def shortest_path_floyd(vertex, W):
     D = copy.deepcopy(W)
 
     for k in range(vsize):
+        print(f"\n--- k = {k + 1} / Intermediate Vertex: {vertex[k]} ---")
         for i in range(vsize):
             for j in range(vsize):
                 if (D[i][k] + D[k][j] < D[i][j]):
-                    D[j][j] = D[i][k] + D[k][j]
+                    D[i][j] = D[i][k] + D[k][j]
         printD(D)
 
 def printD(D):
