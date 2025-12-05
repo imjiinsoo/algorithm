@@ -1,6 +1,6 @@
 # 나중에 코드 정리하기(출력값 위주로)
 import sys
-sys.stdin = open('input3.txt', 'r')
+sys.stdin = open('input.txt', 'r')
 def find(x):
     if parent[x] != x:
         parent[x] = find(parent[x])
