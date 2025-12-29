@@ -12,7 +12,7 @@ def min_coins_dp(coins, W):
     for i in range(1, N + 1):
         d_i = coins[i - 1]
         for j in range(1, W + 1):
-
+            # 바로 위에 행꺼 쓰기 (현재 동전 skip한다면)
             skip_coin = C[i - 1][j]
 
             if j >= d_i:

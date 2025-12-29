@@ -2,10 +2,12 @@ M=13
 table = [None]*M
 def hashFn(key):
     return key % M
+
 class Node:
     def __init__(self,data,link=None):
         self.data=data
         self.link=link
+
 def printTable():
     for i in range(M):
         n=table[i]
@@ -46,4 +48,5 @@ printTable()
 print("38탐색 -> ", search(38))
 print("45삭제")
 delete(45)
+print("99탐색 -> ", search(99))
 printTable()

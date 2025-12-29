@@ -4,8 +4,8 @@ def hashFn(key):
     return key%M
 
 def insert(key):
-    i = hashFn(key)
-    count = M
+    i = hashFn(key) # 원래 가야 할 자리 계산
+    count = M # 무한 루프 방지용 (테이블 꽉 차면 멈춰야 함)
     while count > 0:
         if table[i] == None or table[i] == -1: break
         i = (i+1) % M

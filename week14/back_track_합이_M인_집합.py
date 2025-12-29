@@ -5,8 +5,9 @@ def all_sum_of_subsets(S,M):
 def DFS_sum_of_subsets(S,M,level,sol,remaining):
     print(sol) # 중간중간 sol 체크용
     if sum(sol) == M:
-        print(sol)
+        print('발견했다: ', sol)
         return
+    # 이미 망했거나, 희망이 없거나)
     if sum(sol)>M or (remaining+sum(sol)) < M:
         return
 
@@ -19,3 +20,4 @@ nums = [3,34,4,12,5,2]
 M=9
 print("입력 집합: ", nums, "M = ",M)
 solution = all_sum_of_subsets(nums, M)
+ # 처음부터 다 해보고 뒷걸음질 치고, 가망 없다 싶으면 넘어가고

@@ -24,5 +24,5 @@ def counting_sort2(A):
 
 
 # 테스트 데이터
-data = ['a', 'F', 'c', 'Z', 'y', 'D', 'o']
+data = ['a', 'F','C', 'c', 'Z', 'y', 'd', 'D']
 print(counting_sort2(data))

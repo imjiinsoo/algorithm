@@ -22,7 +22,7 @@ def bar(n):
     return f_current
 
 # f(6) 값 구하기
-n = 6
+n = 3
 result = bar(n)
 
 print(f"f({n})의 값은 {result} 입니다.")

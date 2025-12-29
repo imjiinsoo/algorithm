@@ -1,13 +1,15 @@
 # 분할정복(divide and conquer)
 def fibo(n):
-    if n <= 1: return n
+    if n <= 1:
+        return n
     else:
         return fibo(n-1) + fibo(n-2)
 
 # 메모이제이션
 def fibo_mem(n):
     if mem[n] == None:
-        if n < 2 : mem[n] = n
+        if n < 2 : # fibo0, 1은 각각 값도 0, 1이라서 그냥 처음부터 지정해주기
+            mem[n] = n
 
         else:
             mem[n] = fibo_mem(n-1) + fibo_mem(n-2)
